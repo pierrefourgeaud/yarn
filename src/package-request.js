@@ -259,7 +259,7 @@ export default class PackageRequest {
         pattern: depPattern,
         registry: remote.registry,
         visibility: USED_VISIBILITY,
-        optional: false,
+        optional: this.optional,
         parentRequest: this,
       }));
     }
